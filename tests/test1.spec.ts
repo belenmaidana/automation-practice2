@@ -1,5 +1,7 @@
 import { test, expect } from '@playwright/test';
 
+//DEMO API TOOLS - PAGE
+
 test("Test Print Balance", async ({page})=> {
 
   await page.goto("https://demo.applitools.com/app.html");

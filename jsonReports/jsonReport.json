@@ -67,12 +67,12 @@
       "line": 0,
       "specs": [
         {
-          "title": "Test Sprint App",
+          "title": "Test checkbox",
           "ok": false,
           "tags": [],
           "tests": [
             {
-              "timeout": 0,
+              "timeout": 30000,
               "annotations": [],
               "expectedStatus": "passed",
               "projectId": "chromium",
@@ -81,60 +81,64 @@
                 {
                   "workerIndex": 0,
                   "status": "failed",
-                  "duration": 8224,
+                  "duration": 2758,
                   "error": {
-                    "message": "Error: locator.selectOption: Test ended.\nCall log:\n  \u001b[2m- waiting for locator('xpath=(//input[@name=\\'gender\\'])[1]')\u001b[22m\n",
-                    "stack": "Error: locator.selectOption: Test ended.\nCall log:\n  \u001b[2m- waiting for locator('xpath=(//input[@name=\\'gender\\'])[1]')\u001b[22m\n\n    at C:\\Users\\bmaidana\\Desktop\\automation-practice2\\tests\\test2.spec.ts:83:70",
+                    "message": "Error: locator.check: DOMException: Failed to execute 'evaluate' on 'Document': The string '//input[@name='vehicle'])[1]' is not a valid XPath expression.\n    at Object.queryAll (<anonymous>:41:25)\n    at InjectedScript._queryEngineAll (<anonymous>:5028:49)\n    at InjectedScript.querySelectorAll (<anonymous>:5015:30)\n    at eval (eval at evaluate (:226:30), <anonymous>:4:35)\n    at UtilityScript.evaluate (<anonymous>:228:17)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\nCall log:\n  \u001b[2m- waiting for locator('//input[@name=\\'vehicle\\'])[1]')\u001b[22m\n",
+                    "stack": "Error: locator.check: DOMException: Failed to execute 'evaluate' on 'Document': The string '//input[@name='vehicle'])[1]' is not a valid XPath expression.\n    at Object.queryAll (<anonymous>:41:25)\n    at InjectedScript._queryEngineAll (<anonymous>:5028:49)\n    at InjectedScript.querySelectorAll (<anonymous>:5015:30)\n    at eval (eval at evaluate (:226:30), <anonymous>:4:35)\n    at UtilityScript.evaluate (<anonymous>:228:17)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\nCall log:\n  \u001b[2m- waiting for locator('//input[@name=\\'vehicle\\'])[1]')\u001b[22m\n\n    at Object.queryAll (C:\\Users\\bmaidana\\Desktop\\automation-practice2\\<anonymous>:41:25)\n    at InjectedScript._queryEngineAll (C:\\Users\\bmaidana\\Desktop\\automation-practice2\\<anonymous>:5028:49)\n    at InjectedScript.querySelectorAll (C:\\Users\\bmaidana\\Desktop\\automation-practice2\\<anonymous>:5015:30)\n    at eval (C:\\Users\\bmaidana\\Desktop\\automation-practice2\\eval at evaluate (:226:30), <anonymous>:4:35)\n    at UtilityScript.evaluate (C:\\Users\\bmaidana\\Desktop\\automation-practice2\\<anonymous>:228:17)\n    at UtilityScript.<anonymous> (C:\\Users\\bmaidana\\Desktop\\automation-practice2\\<anonymous>:1:44)\n    at C:\\Users\\bmaidana\\Desktop\\automation-practice2\\tests\\test2.spec.ts:168:56",
                     "location": {
-                      "file": "C:\\Users\\bmaidana\\Desktop\\automation-practice2\\tests\\test2.spec.ts",
-                      "column": 70,
-                      "line": 83
-                    },
-                    "snippet": "\u001b[0m \u001b[90m 81 |\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"input[name='lastname']\"\u001b[39m)\u001b[33m.\u001b[39mfill(\u001b[32m\"Lastname\"\u001b[39m)\n \u001b[90m 82 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 83 |\u001b[39m \u001b[36mconst\u001b[39m selectoresRadio \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"(//input[@name='gender'])[1]\"\u001b[39m)\u001b[33m.\u001b[39mselectOption(\u001b[32m\"female\"\u001b[39m)\n \u001b[90m    |\u001b[39m                                                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 84 |\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mpause()\n \u001b[90m 85 |\u001b[39m\n \u001b[90m 86 |\u001b[39m\u001b[0m"
+                      "file": "C:\\Users\\bmaidana\\Desktop\\automation-practice2\\<anonymous>",
+                      "column": 25,
+                      "line": 41
+                    }
                   },
                   "errors": [
                     {
                       "location": {
-                        "file": "C:\\Users\\bmaidana\\Desktop\\automation-practice2\\tests\\test2.spec.ts",
-                        "column": 70,
-                        "line": 83
+                        "file": "C:\\Users\\bmaidana\\Desktop\\automation-practice2\\<anonymous>",
+                        "column": 25,
+                        "line": 41
                       },
-                      "message": "Error: locator.selectOption: Test ended.\nCall log:\n  \u001b[2m- waiting for locator('xpath=(//input[@name=\\'gender\\'])[1]')\u001b[22m\n\n\n\u001b[0m \u001b[90m 81 |\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"input[name='lastname']\"\u001b[39m)\u001b[33m.\u001b[39mfill(\u001b[32m\"Lastname\"\u001b[39m)\n \u001b[90m 82 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 83 |\u001b[39m \u001b[36mconst\u001b[39m selectoresRadio \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"(//input[@name='gender'])[1]\"\u001b[39m)\u001b[33m.\u001b[39mselectOption(\u001b[32m\"female\"\u001b[39m)\n \u001b[90m    |\u001b[39m                                                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 84 |\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mpause()\n \u001b[90m 85 |\u001b[39m\n \u001b[90m 86 |\u001b[39m\u001b[0m\n\n\u001b[2m    at C:\\Users\\bmaidana\\Desktop\\automation-practice2\\tests\\test2.spec.ts:83:70\u001b[22m"
+                      "message": "Error: locator.check: DOMException: Failed to execute 'evaluate' on 'Document': The string '//input[@name='vehicle'])[1]' is not a valid XPath expression.\n\n\u001b[2m    at Object.queryAll (<anonymous>:41:25)\u001b[22m\n\u001b[2m    at InjectedScript._queryEngineAll (<anonymous>:5028:49)\u001b[22m\n\u001b[2m    at InjectedScript.querySelectorAll (<anonymous>:5015:30)\u001b[22m\n\u001b[2m    at eval (eval at evaluate (:226:30), <anonymous>:4:35)\u001b[22m\n\u001b[2m    at UtilityScript.evaluate (<anonymous>:228:17)\u001b[22m\n\u001b[2m    at UtilityScript.<anonymous> (<anonymous>:1:44)\u001b[22m\n\u001b[2mCall log:\u001b[22m\n\u001b[2m  \u001b[2m- waiting for locator('//input[@name=\\'vehicle\\'])[1]')\u001b[2m\u001b[22m\n\n\u001b[2m    at Object.queryAll (C:\\Users\\bmaidana\\Desktop\\automation-practice2\\<anonymous>:41:25)\u001b[22m\n\u001b[2m    at InjectedScript._queryEngineAll (C:\\Users\\bmaidana\\Desktop\\automation-practice2\\<anonymous>:5028:49)\u001b[22m\n\u001b[2m    at InjectedScript.querySelectorAll (C:\\Users\\bmaidana\\Desktop\\automation-practice2\\<anonymous>:5015:30)\u001b[22m\n\u001b[2m    at eval (C:\\Users\\bmaidana\\Desktop\\automation-practice2\\eval at evaluate (:226:30), <anonymous>:4:35)\u001b[22m\n\u001b[2m    at UtilityScript.evaluate (C:\\Users\\bmaidana\\Desktop\\automation-practice2\\<anonymous>:228:17)\u001b[22m\n\u001b[2m    at UtilityScript.<anonymous> (C:\\Users\\bmaidana\\Desktop\\automation-practice2\\<anonymous>:1:44)\u001b[22m\n\u001b[2m    at C:\\Users\\bmaidana\\Desktop\\automation-practice2\\tests\\test2.spec.ts:168:56\u001b[22m"
                     }
                   ],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-06-26T00:17:19.953Z",
+                  "startTime": "2024-06-28T19:25:42.063Z",
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\Users\\bmaidana\\Desktop\\automation-practice2\\test-results\\tests-test2-Test-Sprint-App-chromium\\test-finished-1.png"
+                      "path": "C:\\Users\\bmaidana\\Desktop\\automation-practice2\\test-results\\tests-test2-Test-checkbox-chromium\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\bmaidana\\Desktop\\automation-practice2\\test-results\\tests-test2-Test-checkbox-chromium\\video.webm"
                     }
                   ],
                   "errorLocation": {
-                    "file": "C:\\Users\\bmaidana\\Desktop\\automation-practice2\\tests\\test2.spec.ts",
-                    "column": 70,
-                    "line": 83
+                    "file": "C:\\Users\\bmaidana\\Desktop\\automation-practice2\\<anonymous>",
+                    "column": 25,
+                    "line": 41
                   }
                 }
               ],
               "status": "unexpected"
             }
           ],
-          "id": "f2b5c1e3efd86b613f6d-235c747f8cf55b5c8a34",
+          "id": "f2b5c1e3efd86b613f6d-f6e57ec54ce980c2a2d0",
           "file": "tests/test2.spec.ts",
-          "line": 74,
-          "column": 6
+          "line": 164,
+          "column": 8
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-06-26T00:17:18.863Z",
-    "duration": 10853.617,
+    "startTime": "2024-06-28T19:25:41.175Z",
+    "duration": 4111.4220000000005,
     "expected": 0,
     "skipped": 0,
     "unexpected": 1,
