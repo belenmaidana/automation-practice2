@@ -16,7 +16,7 @@ test("Test Print Balance", async ({page})=> {
 })
 
 
-test.only("Test table cicle for", async({page}) => 
+test("Test table cicle for", async({page}) => 
  {  
     await page.goto("https://demo.applitools.com/app.html");
     const trTable = page.locator("tbody");

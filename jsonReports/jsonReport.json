@@ -48,7 +48,7 @@
         "testDir": "C:/Users/bmaidana/Desktop/automation-practice2",
         "testIgnore": [],
         "testMatch": [
-          "tests/test2.spec.ts"
+          "tests/naturaTest.spec.ts"
         ],
         "timeout": 30000
       }
@@ -61,14 +61,103 @@
   },
   "suites": [
     {
-      "title": "tests\\test2.spec.ts",
-      "file": "tests/test2.spec.ts",
+      "title": "tests\\naturaTest.spec.ts",
+      "file": "tests/naturaTest.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Test checkbox",
-          "ok": false,
+          "title": "Natura Cosmeticos Test integral",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "skip"
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-07-12T13:59:13.180Z",
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "118908177170c896ade4-bfffdf3a6495aa06924e",
+          "file": "tests/naturaTest.spec.ts",
+          "line": 23,
+          "column": 6
+        },
+        {
+          "title": "Add product to Cart",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 0,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 43009,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Login exitoso\n"
+                    },
+                    {
+                      "text": "Producto agregado con éxito\n"
+                    },
+                    {
+                      "text": "Su producto Serum rellenador biohidratanteha sido agregado al carrito\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-07-12T13:59:13.181Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\bmaidana\\Desktop\\automation-practice2\\test-results\\tests-naturaTest-Add-product-to-Cart-chromium\\test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\bmaidana\\Desktop\\automation-practice2\\test-results\\tests-naturaTest-Add-product-to-Cart-chromium\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "118908177170c896ade4-7ac5ac690820d45e8286",
+          "file": "tests/naturaTest.spec.ts",
+          "line": 60,
+          "column": 5
+        },
+        {
+          "title": "Add product to Favourite",
+          "ok": true,
           "tags": [],
           "tests": [
             {
@@ -80,68 +169,108 @@
               "results": [
                 {
                   "workerIndex": 0,
-                  "status": "failed",
-                  "duration": 2758,
-                  "error": {
-                    "message": "Error: locator.check: DOMException: Failed to execute 'evaluate' on 'Document': The string '//input[@name='vehicle'])[1]' is not a valid XPath expression.\n    at Object.queryAll (<anonymous>:41:25)\n    at InjectedScript._queryEngineAll (<anonymous>:5028:49)\n    at InjectedScript.querySelectorAll (<anonymous>:5015:30)\n    at eval (eval at evaluate (:226:30), <anonymous>:4:35)\n    at UtilityScript.evaluate (<anonymous>:228:17)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\nCall log:\n  \u001b[2m- waiting for locator('//input[@name=\\'vehicle\\'])[1]')\u001b[22m\n",
-                    "stack": "Error: locator.check: DOMException: Failed to execute 'evaluate' on 'Document': The string '//input[@name='vehicle'])[1]' is not a valid XPath expression.\n    at Object.queryAll (<anonymous>:41:25)\n    at InjectedScript._queryEngineAll (<anonymous>:5028:49)\n    at InjectedScript.querySelectorAll (<anonymous>:5015:30)\n    at eval (eval at evaluate (:226:30), <anonymous>:4:35)\n    at UtilityScript.evaluate (<anonymous>:228:17)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\nCall log:\n  \u001b[2m- waiting for locator('//input[@name=\\'vehicle\\'])[1]')\u001b[22m\n\n    at Object.queryAll (C:\\Users\\bmaidana\\Desktop\\automation-practice2\\<anonymous>:41:25)\n    at InjectedScript._queryEngineAll (C:\\Users\\bmaidana\\Desktop\\automation-practice2\\<anonymous>:5028:49)\n    at InjectedScript.querySelectorAll (C:\\Users\\bmaidana\\Desktop\\automation-practice2\\<anonymous>:5015:30)\n    at eval (C:\\Users\\bmaidana\\Desktop\\automation-practice2\\eval at evaluate (:226:30), <anonymous>:4:35)\n    at UtilityScript.evaluate (C:\\Users\\bmaidana\\Desktop\\automation-practice2\\<anonymous>:228:17)\n    at UtilityScript.<anonymous> (C:\\Users\\bmaidana\\Desktop\\automation-practice2\\<anonymous>:1:44)\n    at C:\\Users\\bmaidana\\Desktop\\automation-practice2\\tests\\test2.spec.ts:168:56",
-                    "location": {
-                      "file": "C:\\Users\\bmaidana\\Desktop\\automation-practice2\\<anonymous>",
-                      "column": 25,
-                      "line": 41
-                    }
-                  },
-                  "errors": [
+                  "status": "passed",
+                  "duration": 25686,
+                  "errors": [],
+                  "stdout": [
                     {
-                      "location": {
-                        "file": "C:\\Users\\bmaidana\\Desktop\\automation-practice2\\<anonymous>",
-                        "column": 25,
-                        "line": 41
-                      },
-                      "message": "Error: locator.check: DOMException: Failed to execute 'evaluate' on 'Document': The string '//input[@name='vehicle'])[1]' is not a valid XPath expression.\n\n\u001b[2m    at Object.queryAll (<anonymous>:41:25)\u001b[22m\n\u001b[2m    at InjectedScript._queryEngineAll (<anonymous>:5028:49)\u001b[22m\n\u001b[2m    at InjectedScript.querySelectorAll (<anonymous>:5015:30)\u001b[22m\n\u001b[2m    at eval (eval at evaluate (:226:30), <anonymous>:4:35)\u001b[22m\n\u001b[2m    at UtilityScript.evaluate (<anonymous>:228:17)\u001b[22m\n\u001b[2m    at UtilityScript.<anonymous> (<anonymous>:1:44)\u001b[22m\n\u001b[2mCall log:\u001b[22m\n\u001b[2m  \u001b[2m- waiting for locator('//input[@name=\\'vehicle\\'])[1]')\u001b[2m\u001b[22m\n\n\u001b[2m    at Object.queryAll (C:\\Users\\bmaidana\\Desktop\\automation-practice2\\<anonymous>:41:25)\u001b[22m\n\u001b[2m    at InjectedScript._queryEngineAll (C:\\Users\\bmaidana\\Desktop\\automation-practice2\\<anonymous>:5028:49)\u001b[22m\n\u001b[2m    at InjectedScript.querySelectorAll (C:\\Users\\bmaidana\\Desktop\\automation-practice2\\<anonymous>:5015:30)\u001b[22m\n\u001b[2m    at eval (C:\\Users\\bmaidana\\Desktop\\automation-practice2\\eval at evaluate (:226:30), <anonymous>:4:35)\u001b[22m\n\u001b[2m    at UtilityScript.evaluate (C:\\Users\\bmaidana\\Desktop\\automation-practice2\\<anonymous>:228:17)\u001b[22m\n\u001b[2m    at UtilityScript.<anonymous> (C:\\Users\\bmaidana\\Desktop\\automation-practice2\\<anonymous>:1:44)\u001b[22m\n\u001b[2m    at C:\\Users\\bmaidana\\Desktop\\automation-practice2\\tests\\test2.spec.ts:168:56\u001b[22m"
+                      "text": "Login exitoso\n"
+                    },
+                    {
+                      "text": "Su producto Labial matte intransferible 8ml ha sido agregado a favoritos\n"
+                    },
+                    {
+                      "text": "Favoritos vaciado correctamente\n"
+                    },
+                    {
+                      "text": "Test passed\n"
                     }
                   ],
-                  "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-06-28T19:25:42.063Z",
+                  "startTime": "2024-07-12T13:59:56.437Z",
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\Users\\bmaidana\\Desktop\\automation-practice2\\test-results\\tests-test2-Test-checkbox-chromium\\test-failed-1.png"
+                      "path": "C:\\Users\\bmaidana\\Desktop\\automation-practice2\\test-results\\tests-naturaTest-Add-product-to-Favourite-chromium\\test-finished-1.png"
                     },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "C:\\Users\\bmaidana\\Desktop\\automation-practice2\\test-results\\tests-test2-Test-checkbox-chromium\\video.webm"
+                      "path": "C:\\Users\\bmaidana\\Desktop\\automation-practice2\\test-results\\tests-naturaTest-Add-product-to-Favourite-chromium\\video.webm"
                     }
-                  ],
-                  "errorLocation": {
-                    "file": "C:\\Users\\bmaidana\\Desktop\\automation-practice2\\<anonymous>",
-                    "column": 25,
-                    "line": 41
-                  }
+                  ]
                 }
               ],
-              "status": "unexpected"
+              "status": "expected"
             }
           ],
-          "id": "f2b5c1e3efd86b613f6d-f6e57ec54ce980c2a2d0",
-          "file": "tests/test2.spec.ts",
-          "line": 164,
-          "column": 8
+          "id": "118908177170c896ade4-7735d92798fe776d1a43",
+          "file": "tests/naturaTest.spec.ts",
+          "line": 82,
+          "column": 5
+        },
+        {
+          "title": "Empty cart",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 23587,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Login exitoso\n"
+                    },
+                    {
+                      "text": "Carrito vaciado con éxito\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-07-12T14:00:22.136Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\bmaidana\\Desktop\\automation-practice2\\test-results\\tests-naturaTest-Empty-cart-chromium\\test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\bmaidana\\Desktop\\automation-practice2\\test-results\\tests-naturaTest-Empty-cart-chromium\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "118908177170c896ade4-a7f32990c884f7f54404",
+          "file": "tests/naturaTest.spec.ts",
+          "line": 94,
+          "column": 5
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-06-28T19:25:41.175Z",
-    "duration": 4111.4220000000005,
-    "expected": 0,
-    "skipped": 0,
-    "unexpected": 1,
+    "startTime": "2024-07-12T13:59:12.332Z",
+    "duration": 93935.56199999999,
+    "expected": 3,
+    "skipped": 1,
+    "unexpected": 0,
     "flaky": 0
   }
 }

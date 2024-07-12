@@ -18,7 +18,7 @@ test("Test Hover Menu - desde el menu apoyar el mouse sobre un titulo para acced
 
 
 
-  test("Test Fill out forms - Captcha Suma de numeros", async ({page}) => {
+  test.only("Test Fill out forms - Captcha Suma de numeros", async ({page}) => {
 
     await page.goto("https://ultimateqa.com/automation");   //ingreso a la pagina
     await page.locator("text='Fill out forms'").click();    //click en la pagina de Forms
