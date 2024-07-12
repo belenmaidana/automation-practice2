@@ -1,4 +1,4 @@
-import { defineConfig, devices } from '@playwright/test';
+import { defineConfig, devices } from "@playwright/test";
 
 /**
  * Read environment variables from file.
@@ -11,38 +11,48 @@ import { defineConfig, devices } from '@playwright/test';
  * See https://playwright.dev/docs/test-configuration.
  */
 export default defineConfig({
-  testMatch: ["tests/test2.spec.ts"],
-  
+  testMatch: ["tests/naturaTest.spec.ts"],
+
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */
     // baseURL: 'http://127.0.0.1:3000',
     headless: false,
     screenshot: "on",
-    video: "on"
-    
+    video: "on",
+    launchOptions: {
+      slowMo: 50,
+    },
   },
 
-    reporter: [["dot"], ["json", {           
-      outputFile: "jsonReports/jsonReport.json"  
-    }], ["html", {         
-      open: "always"		
-    }]],
-  
+  reporter: [
+    ["dot"],
+    [
+      "json",
+      {
+        outputFile: "jsonReports/jsonReport.json",
+      },
+    ],
+    [
+      "html",
+      {
+        open: "always",
+      },
+    ],
+  ],
 
-  
-  //   /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
-  //   trace: 'on-first-retry',
-  // },
+  /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
+  //trace: 'on-first-retry',
+  //},
 
   /* Configure projects for major browsers */
   projects: [
     {
-      name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
-      
+      name: "chromium",
+      use: {
+        ...devices["Desktop Chrome"],
+        viewport: { width: 1920, height: 1080 },
+      },
     },
-
-    
 
     // {
     //   name: 'firefox',

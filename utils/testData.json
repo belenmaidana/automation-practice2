@@ -5,7 +5,19 @@
     "message": "Soy un mensaje",
     "lastname": "Maidana",
     "username": "asdasdasd",
-    "usermail": "testmail2@testing.com",
-    "password": "testPassword1"
+    "usermail": "vane-32_77@hotmail.com",
+    "password": "Simon.2024",
+    "productName": "Serum rellenador biohidratante",
+    "productName2": "Labial matte intransferible 8ml",
+    "provincia": "Buenos Aires",
+    "localidad": "san miguel", 
+    "codigoPostal": "B1663",
+    "calle": "Salguero",
+    "numero": "1560",
+    "tipoDireccion": "casa",
+    "receptor": "belen maidana",
+    "telefono": "11 2398-4444"
+
+
 }
 
